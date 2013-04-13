@@ -18,3 +18,23 @@
 \DeclareMathOperator{\mdo}{do}     %% do operator
 \def\ci{\perp\!\!\!\perp}          %% conditional independence
 
+
+% SLANT FRACTION
+\newcommand{\hslfrac}[2]{#1 / #2} 
+
+%% CALCULUS
+%create partial and cross partial commands
+\newcommand{\hpar}[1]{\frac{\partial}{\partial #1}}
+\newcommand{\hpard}[1]{\dfrac{\partial}{\partial #1}} 
+\newcommand{\hpart}[2]{\frac{\partial #1}{\partial #2}} 
+\newcommand{\hpartd}[2]{\dfrac{\partial #1}{\partial #2}} 
+\newcommand{\hpartsq}[2]{\frac{\partial^2 #1}{\partial #2 ^2}} 
+\newcommand{\hpartdsq}[2]{\dfrac{\partial^2 #1}{\partial #2 ^2}} 
+\newcommand{\hpartsl}[2]{\hslfrac{\partial #1}{\partial #2}} 
+\newcommand{\hxpart}[3]{\frac{\partial^2 #1}{\partial #2 \partial #3}} 
+\newcommand{\hxpartd}[3]{\dfrac{\partial^2 #1}{\partial #2 \partial #3}}
+
+% SEQUENCE NOTATION
+\newcommand {\infseq}[1] {\ensuremath{ \left\{#1\right\}^{\infty}_{t=0} }}
+\newcommand {\seq}[1] {\ensuremath{ \left\{#1\right\} }}
+
